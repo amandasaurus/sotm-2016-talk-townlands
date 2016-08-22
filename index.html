@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Townland </title>
+		<title>Mapping Townlands</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="description" content="">
 		<meta name="author" content="Hakim El Hattab">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="reveal.js-3.3.0/css/reveal.css">
-		<link rel="stylesheet" href="reveal.js-3.3.0/css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="reveal.js-3.3.0/css/theme/sky.css" id="theme">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="reveal.js-3.3.0/lib/css/zenburn.css">
@@ -85,6 +85,40 @@
                     <p>Helps people searching for Irish ancestry</p>
                 </section>
                 <!-- 3. History/Sources/Issues with existing boundary data in Ireland (cost, licence, accuracy) -->
+
+                <!-- A bit on how we mapped it -->
+                <section>
+                    <h1>So how do we do it?</h1>
+                    <p>Most maps now a days don't show townland borders</p>
+                    <p>Or other borders. Only counties (<code>admin_level=6</code>)</p>
+                </section>
+                <section>
+                    <h1>Tax authorities to the rescue!</h1>
+                    <h1 class="fragment">19th Century British tax authorities</h1>
+                </section>
+                <section>
+                    <p>From 1829-42 the Ordnance Survey mapped Ireland for tax purposes</p>
+                    <p>Made some beautfily Six Inch to a Mile (1:10,5600) maps</p>
+                    <p>Clearly show townland borders</p>
+                    <p>Copyright has expired!</p>
+                </section>
+
+                <section>
+                    <p><img src="images/osi-6-inch.png"></p>
+                </section>
+                <section>
+                    <p>Problems: Only a few libraries and universities physically have the ~2,000 sheets</p>
+                    <p>Ordnance Survey Ireland have a copy<p>
+                    <p class=fragment>Scanned in!</p>
+                    <p class=fragment>Cropped and rectified!</p>
+                </section>
+                <section>
+                    <h1>But</h1>
+                    <img src="images/osi-6-inch-copyright-claim.png">
+                    <p>Claim copyright</p>
+                </section>
+                
+
 
                 <!-- Part 2 - Testing the waters 3 mins -->
                 <!-- 1. Brianh talking to trinity, getting sheets for carlow -->
