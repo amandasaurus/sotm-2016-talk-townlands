@@ -53,8 +53,8 @@
                     <h1>Townlands</h1>
                     <p>Lowest level of Ireland's adminitrative boundary</p>
                     <p><code>admin_level=10</code></p>
-                    <p>Very old - Traditionally the amount of land one extended family could live off.</p>
-                    <p>Date back about 1,000 years</p>
+                    <p>Very old - Date back about 1,000 years</p>
+                    <p>Very small - Traditionally the amount of land one extended family could live off.</p>
                     <!-- stats about townland size -->
                 </section>
                 <!-- If get a reference to an old irish book? -->
@@ -64,7 +64,7 @@
                     <h2>Addresses</h2>
                     <p>Anyone geocoded Irish addresses? It's a mess.</p>
                     <p>Houses in rural Ireland don't have house numbers, instead using "House Name, Townland, Nearby Town, County"</p>
-                    <p>Townlands are thus important for geocoding many addresses.</p>
+                    <p>Townlands are important for geocoding many addresses.</p>
                     <p>Newly introduced postcode system (Eircode) might change that</p>
                 </section>
                 <section>
@@ -72,19 +72,20 @@
                     <h2>Other administrative boundaries</h2>
                     <p>Atomic unit of other administrative boundaries</p>
                     <p>Larger administrative boundaries are made up of townlands.</p>
-                    <p>Electoral Divisions (LAU)</p>
-                    <p>Constituancies</p>
-                    <p>Allows us to map these.</p>
-                    <p>Can now use Irish official government </p>
+                    <p>Electoral Divisions (NUTS LAU), Constituancies</p>
+                    <p>Can now add those to OSM</p>
+                    <p>Can now use Irish official government data</p>
                 </section>
                 <section>
                     <h1>Why?</h1>
                     <h2>History and Heritage</h2>
                     <p>Part of Ireland's cultural heritage and should be preserved and spread.</p>
-                    <p>19th century census records will be sorted by townlands.</p>
-                    <p>Helps people searching for Irish ancestry</p>
+                    <p>19th century census records are sorted by townlands.</p>
+                    <p>Helps people searching for Irish ancestry/geneology</p>
                 </section>
                 <!-- 3. History/Sources/Issues with existing boundary data in Ireland (cost, licence, accuracy) -->
+                Open Data
+                Can't we import some open data from the government?
 
                 <!-- A bit on how we mapped it -->
                 <section>
@@ -123,7 +124,7 @@
                 <section>
                     <h1>Need another source</h1>
                     <p>Third Edition of 1:10,560 published in ~1910</p>
-                    <p>1922 - Irish indepdence</p>
+                    <p>1922 - Irish gets independence from the UK</p>
                     <p>1939 - WW2 starts</p>
                     <p>1940 - UK war office, thinking they might need maps of Ireland, fall back to the 3rd Ed.</p>
                     <p>Rescale 3rd Ed to produce GSGS 3906 maps</p>
@@ -136,7 +137,7 @@
                 </section>
                 <section>
                     <h1>Let's get rectifying</h1>
-                    <p>Upload the images to Map Warper.</p>
+                    <p>Upload the images to Map Warper (<a href="www.mapwarper.net">mapwarper.net</a>)</p>
                     <p>About ~675 images</p>
                     <p>Community starts cropping, rectifying and mapping.</p>
                 </section>
@@ -204,17 +205,28 @@
                 <!-- 4. More boundaries started being mapped (give a 1 sentence explanation of each) -->
                 <section>
                     <h1>Map all the boundaries</h1>
-                    We can now start adding higher level administrative boundaries
-                    Civil Parishes
-                        Based on Church of Ireland (Anglican) parishes
-                        Used in geneology
-                    Baronies
-                        Each county is split into 
-                    Electoral Divisions
+                    <p>We can now start adding higher level administrative boundaries</p>
+                    <img src="images/map-all-the-things.jpg">
+                </section>
+                <section>
+                    <h1>Civil Parishes</h1>
+                    <p>Based on Church of Ireland (Anglican) parishes</p>
+                    <p>Not used much any more</p>
+                    <p>Very useful for geneology, since old census, birth certs etc are often "keyed" against CP</p>
+                    <p><code>boundary=civil_parish</code></p>
+                </section>
+                    <h1>Baronies</h1>
+                    <p>Each county is split into a few baronies</p>
+                        <code>boundary=barony</code>
+                        
+                </section>
+                <section>
+                    <h1>Electoral Divisions</h1>
+
                         Constitutancies (which are often changed) are legally defined by EDs (mostly)
                         Official statistics (Census) use EDs
                         EU level statistics area (NUTS / LAU)
-                <section>
+                </section>
 
                 <!-- CP's -->
 
