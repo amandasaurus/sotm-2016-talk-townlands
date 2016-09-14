@@ -63,18 +63,18 @@
                     <h1>Why?</h1>
                     <h2>Addresses</h2>
                     <p>Anyone geocoded Irish addresses? It's a mess.</p>
-                    <p>Houses in rural Ireland don't have house numbers, instead using "House Name, Townland, Nearby Town, County"</p>
+                    <p>Houses in rural Ireland don't have house numbers, instead using (sometimes) "House Name, Townland, Nearby Town, County"</p>
                     <p>Townlands are important for geocoding many addresses.</p>
                     <p>Newly introduced postcode system (Eircode) might change that</p>
                 </section>
                 <section>
                     <h1>Why?</h1>
                     <h2>Other administrative boundaries</h2>
-                    <p>Atomic unit of other administrative boundaries</p>
+                    <p>Townlands are atomic unit of other administrative boundaries</p>
                     <p>Larger administrative boundaries are made up of townlands.</p>
                     <p>Electoral Divisions (NUTS LAU), Constituancies</p>
                     <p>Can now add those to OSM</p>
-                    <p>Can now use Irish official government data</p>
+                    <p>Can now use Irish official government data which is keyed on ED</p>
                 </section>
                 <section>
                     <h1>Why?</h1>
@@ -85,13 +85,16 @@
                 </section>
                 <!-- 3. History/Sources/Issues with existing boundary data in Ireland (cost, licence, accuracy) -->
                 <section>
-                    Open Data
-                    Can't we import some open data from the government?
+                    <h1>Open Data</h1>
+                    <p>Can't we import some open data from the government?</p>
+                    <p>No. Not available, incompatible licence or simplified</p>
+                    <p>NI gov released townland data days after OSM had completed NI</p>
                 </section>
 
                 <!-- A bit on how we mapped it -->
                 <section>
                     <h1>So how do we do it?</h1>
+                    <p>Tracing!</p>
                     <p>Most maps now a days don't show townland borders</p>
                     <p>Or other borders. Only counties (<code>admin_level=6</code>)</p>
                 </section>
@@ -100,13 +103,16 @@
                     <h1 class="fragment">19th Century British tax authorities</h1>
                 </section>
                 <section>
+                    <h1>Ordnance Survey - First edition</h1>
                     <p>From 1829-42 the Ordnance Survey mapped Ireland for tax purposes</p>
                     <p>Made some beautiful Six Inch to a Mile (1:10,5600) maps ("First Edition")</p>
                     <p>Clearly show townland borders</p>
                     <p>Copyright has expired!</p>
+                    <p>Historically tidbit: Population of Ireland has halved since then.</p>
                 </section>
 
                 <section>
+                    <h1>Nice easy to read maps</h1>
                     <p><img src="images/osi-6-inch.png"></p>
                 </section>
                 <section>
@@ -118,11 +124,9 @@
                 <section>
                     <h1>But</h1>
                     <img src="images/osi-6-inch-copyright-claim.png">
-                    <p>Claim copyright :(</p>
+                    <p>Claim copyright ☹</p>
                 </section>
 
-                <!-- Part 2 - Testing the waters 3 mins -->
-                <!-- 1. Brianh talking to trinity, getting sheets for carlow -->
                 <section>
                     <h1>Need another source</h1>
                     <p>Third Edition of 1:10,560 published in ~1910</p>
@@ -132,7 +136,7 @@
                     <p>Rescale 3rd Ed to produce GSGS 3906 maps</p>
                 </section>
                 <section>
-                    <!-- NLS? -->
+                    <h1>Glucksman Map Library, Trinity College, Dublin</h1>
                     <p>Glucksman Map Library, in Trinity College, Dublin had a scan</p>
                     <p>We will rectify and crop it, if we can scan it</p>
                     <p>Success!</p>
@@ -144,29 +148,19 @@
                     <p>Community starts cropping, rectifying and mapping.</p>
                 </section>
                 <section>
-                    <h1>Quality :/</h1>
+                    <h1>Quality 😕</h1>
                     <p>Can you spot the townland borders?</p>
                     <img src="images/sample-townlands.png">
                 </section>
                 <section>
-                    <h1>Quality :/</h1>
+                    <h1>Quality 😕</h1>
                     <p>Can you spot the townland borders?</p>
                     <img src="images/sample-townlands-with-borders-highlighted.png">
                 </section>
-                <!-- 2. Small group effort  -->
-                <!-- 2.1 Outline the workflow briefly i.e. Donal did everything with the sheets,  -->
-                <!-- 3. Some data - how many people, how long -->
-                <!-- 4. Tools used - ooc imagery hosting on OSM (no longer in existance) used *something to rectify and crop, ask Donal -->
                 <section>
-                    <h1>Initial workflow</h1>
-                    <p>Used QGIS to rectify individual images
+                    <h1>Let's get mapping</h1>
+                    <p></p>
                 </section>
-                <!-- 5. Success! *insert Borat picture here* ;) -->
-
-                <!-- Part 3 - Full release by Trinity 1 min -->
-                <!-- 1. Previous workflow unsuitable due to volume -->
-                <!-- 2. New workflow put together (2-3 slides on this emphasising the complexity) -->
-                <!-- 3. Still very complicated so very few people involved -->
 
                 <!-- Part 4 - Developing Tools and Resources 4 mins -->
                 <!-- 1. dev3 server - give some detail on this -->
@@ -174,9 +168,7 @@
                     <h1>maps.openstreetmap.org - Slippy map</h1>
                     <p>We set up a replicating slippy map tile server which shows the mapped townlands (etc).</p>
                     <p>Allows people to see how it's being done</p>
-                    <!-- screenshot of complete -->
                 </section>
-                <!-- 2. Townlands.ie  - give some detail on this -->
                 <section>
                     <h1>townlands.ie</h1>
                     <p>Rory set up <a href="www.townlands.ie">townlands.ie</a></p>
@@ -189,10 +181,6 @@
                     <p>Covers all aspects of georectifying a sheet, using JOSM, mapping the townland, and other areas</p>
                     <p>Led to some new mappers coming out the woodwork and contributing</p>
                 </section>
-                <!-- 3. Training materials  - give some detail on this -->
-
-                <!-- Training given in IT's -->
-
                 <!-- Talks given at Historical societies -->
 
                 <section>
@@ -248,9 +236,20 @@
 
                 <!-- Part 8 - And finally 1 min -->
                 <section>
+                    <h1>Mapped townlands</h1>
+                    <img src="images/completed-townlands.png">
+                </section>
+                <section>
+                    <h1>One problem</h1>
+                    <p><img src="images/relations-everywhere.jpg"></p>
+                    <p>Since townlands are small, there are now tens of thousands of tiny relations all over Ireland</p>
+                </section>
+                <section>
                     <h1>Lessons</h1>
                     <p>Seemed impossible in 2010</p>
-                    <p>But we did it</p>
+                    <p>But we did it!</p>
+                    <p>Most mapping done by small number of people</p>
+                    <p>But you have to get out there and tell people, in order to find the long tail mappers</p>
                 </section>
                 <!-- 1. This was long, slow and hard to do, but it was entirely possible to do  -->
                 <!-- 2. Tools & resources are important. Setting a complex task is all good and well, but for success you need to come together and build on what you are best at (some are techies, some are teachers, some are motivators, all are important) -->
