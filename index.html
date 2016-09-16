@@ -57,8 +57,12 @@
                     <p>Very small - Traditionally the amount of land one extended family could live off.</p>
                     <!-- stats about townland size -->
                 </section>
-                <!-- If get a reference to an old irish book? -->
                 <!-- 2. Why they are important -->
+                <section>
+                    <h1>Why?</h1>
+                    <h2>Why not?</h2>
+                    <p>This is an OpenStreetMap conference, do we need to explain why you <i>wouldn't</i> map something?</p>
+                </section>
                 <section>
                     <h1>Why?</h1>
                     <h2>Addresses</h2>
@@ -108,7 +112,12 @@
                     <p>Made some beautiful Six Inch to a Mile (1:10,5600) maps ("First Edition")</p>
                     <p>Clearly show townland borders</p>
                     <p>Copyright has expired!</p>
-                    <p>Historically tidbit: Population of Ireland has halved since then.</p>
+                </section>
+                <section>
+                    <h1>Ordnance Survey - First edition</h1>
+                    <h2>Aside: Historical tidbits</h2>
+                    <p>Population of Ireland has halved since then. (Famine in 1845-52 &amp; emmigration ☹)</p>
+                    <p>Ireland was probably one of the best mapped countries on the planet at the time</p>
                 </section>
 
                 <section>
@@ -116,7 +125,8 @@
                     <p><img src="images/osi-6-inch.png"></p>
                 </section>
                 <section>
-                    <p>Problems: Only a few libraries and universities physically have the ~2,000 sheets</p>
+                    <p>These are ~2,000 large sheets from 150 years ago.</p>
+                    <p>Problems: Only a few libraries and universities physically have them</p>
                     <p>Ordnance Survey Ireland have a copy<p>
                     <p class=fragment>Scanned in!</p>
                     <p class=fragment>Cropped and rectified!</p>
@@ -129,11 +139,12 @@
 
                 <section>
                     <h1>Need another source</h1>
-                    <p>Third Edition of 1:10,560 published in ~1910</p>
-                    <p>1922 - Irish gets independence from the UK</p>
+                    <p>1829-42 - First Edition of 1:10,560</p>
+                    <p>1910s - Third Edition of 1:10,560</p>
+                    <p>1922 - Ireland gets independence from the UK</p>
                     <p>1939 - WW2 starts</p>
                     <p>1940 - UK war office, thinking they might need maps of Ireland, fall back to the 3rd Ed.</p>
-                    <p>Rescale 3rd Ed to produce GSGS 3906 maps</p>
+                    <p>Rescale 3rd Ed 4:1 to produce GSGS 3906 maps</p>
                 </section>
                 <section>
                     <h1>Glucksman Map Library, Trinity College, Dublin</h1>
@@ -147,12 +158,12 @@
                     <p>About ~675 images</p>
                     <p>Community starts cropping, rectifying and mapping.</p>
                 </section>
-                <section>
+                <section data-transition="none-out">
                     <h1>Quality 😕</h1>
                     <p>Can you spot the townland borders?</p>
                     <img src="images/sample-townlands.png">
                 </section>
-                <section>
+                <section data-transition="none-in none">
                     <h1>Quality 😕</h1>
                     <p>Can you spot the townland borders?</p>
                     <img src="images/sample-townlands-with-borders-highlighted.png">
@@ -164,7 +175,7 @@
 
                 <section>
                     <h1>Some things to make it easier</h1>
-                    <p>We made some tools to help</p>
+                    <p>Some tools to help</p>
                     <p>JOSM preset and map paint style</p>
                     <p>Slippy map</p>
                     <p>townlands.ie</p>
@@ -172,16 +183,29 @@
                 </section>
 
                 <section>
+                    <h1>JOSM</h1>
+                    <p>All mapping was done in JOSM</p>
+                    <p>Much easier to include custom imagery layer(s)</p>
+                    <p>Custom map paint style to display mapped Townlands (etc)</p>
+                    <p>Custom preset</p>
+                    <p>Validator for multipolygon relations</p>
+                    <p>Lots and lots of relations!</p>
+                </section>
+
+                <section>
                     <h1>maps.openstreetmap.org - Slippy map</h1>
                     <p>We set up a replicating slippy map tile server which shows the mapped townlands (etc).</p>
-                    <p>Allows people to see how it's being done</p>
+                    <p>Allows people to see mapping progress as it's done.</p>
+                    <p>Missing townland? Maybe incorrect relation</p>
                 </section>
+
                 <section>
                     <h1>townlands.ie</h1>
                     <p>Rory set up <a href="www.townlands.ie">townlands.ie</a></p>
                     <p>Django web app that imports OSM data and displays OSM data</p>
                     <p>Includes progress reports and rates of mapping, to spur people on.</p>
                 </section>
+
                 <section>
                     <h1>YouTube videos</h1>
                     <p>Dave made <a href="https://www.youtube.com/watch?v=KGkgolZV9is&list=PLwUy6ph8y4kFO8mmUgv87f16e4dxRh8NV">video tutorial on mapping townlands</a></p>
@@ -191,8 +215,8 @@
 
                 <section>
                     <h1>Map all the boundaries</h1>
-                    <p>While adding townlands, we can now start adding higher level administrative boundaries</p>
                     <img src="images/map-all-the-things.jpg">
+                    <p>While adding townlands, we can now start adding higher level administrative boundaries</p>
                 </section>
                 <section>
                     <h1>Civil Parishes</h1>
@@ -216,11 +240,18 @@
                 </section>
 
                 <!-- MD's -->
+
                 <section>
                     <h1>Some stats</h1>
                     <p>There are 60,513 townlands</p>
                     <p>First townland added in 27th June 2010</p>
                     <p>Last added 25th August 2016</p>
+                </section>
+
+                <section>
+                    <h1>Who's mapping?</h1>
+                    <img src="images/user-contributions.svg">
+                    <p>Long tail!</p>
                 </section>
 
 
@@ -250,17 +281,32 @@
                     <p>Seemed impossible in 2010</p>
                     <p>But we did it!</p>
                     <p>Most mapping done by small number of people</p>
-                    <p>But you have to get out there and tell people, in order to find the long tail mappers</p>
+                    <p>But you have to get out there and tell people, in order to <b>find</b> the long tail mappers</p>
                 </section>
-                <!-- 1. This was long, slow and hard to do, but it was entirely possible to do  -->
-                <!-- 2. Tools & resources are important. Setting a complex task is all good and well, but for success you need to come together and build on what you are best at (some are techies, some are teachers, some are motivators, all are important) -->
+                <section>
+                    <h1>Lessons</h1>
+                    <p>Tools &amp; resources are important.</p>
+                    <p>Setting a complex task is all good and well, but for success you need to come together and build on what you are best at</p>
+                    <p>Some are techies, some are teachers, some are motivators, all are important</p>
+                </section>
+
                 <!-- 3. Libraries here (trinity & Bodelian) -->
                 <!-- 4. Same with Blueprint (brianh can give an approx number of scans they've done for us) -->
+                <section>
+                    <h1>Thanks to Govs</h1>
+                    <p>Thanks to the governments of Ireland and Northern Ireland</p>
+                    <p>Both have (now) released townland data, albeit generalised, in an open licence</p>
+                    <p class=fragment>Just before we finished</p>
+                    <p class=fragment>Wasn't that nice of them?</p>
+                </section>
+                        
                 <!-- 5. Lastly, thanks to the governments of Ireland and Northern ireland who both decided to release this data, albeit generalised, under an open licence just before we finished, that was nice of them wasn't it -->
+
                 <section>
                     <h1>The Future - What next?</h1>
                     <p>Can utilize government's open data (EDs)</p>
                     <p>Map more accurately - Dramatically improved county borders</p>
+                    <p>Can import </p>
                 </section>
 
 			</div>
