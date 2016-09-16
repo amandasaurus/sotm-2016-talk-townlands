@@ -12,13 +12,13 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #add9e4;
-  background: -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7fbfc), color-stop(100%, #add9e4));
-  background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background: radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+  background: #9EFFBC;
+  background: -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #9EFFBC 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7fbfc), color-stop(100%, #9EFFBC));
+  background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #9EFFBC 100%);
+  background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #9EFFBC 100%);
+  background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #9EFFBC 100%);
+  background: radial-gradient(center, circle cover, #f7fbfc 0%, #9EFFBC 100%);
   background-color: #f7fbfc; }
 
 .reveal {
@@ -48,7 +48,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #333;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: -0.08em;
@@ -56,10 +56,10 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 2.77em; }
+  font-size: 1.57em; }
 
 .reveal h2 {
-  font-size: 1.9em; }
+  font-size: 1.4em; }
 
 .reveal h3 {
   font-size: 1.55em; }
@@ -81,8 +81,9 @@ body {
 .reveal img,
 .reveal video,
 .reveal iframe {
-  max-width: 95%;
-  max-height: 95%; }
+  max-width: 75%;
+  max-height: 75%;
+  }
 
 .reveal strong,
 .reveal b {
