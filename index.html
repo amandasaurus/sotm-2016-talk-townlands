@@ -51,10 +51,10 @@
                 <!-- 1. History of townlands (1-2 slides max) -->
                 <section>
                     <h1>Townlands</h1>
-                    <p>Lowest level of Ireland's adminitrative boundary</p>
-                    <p><code>admin_level=10</code></p>
-                    <p>Very old - Date back about 1,000 years</p>
+                    <p>Lowest level of Ireland's adminitrative hierarchy</p>
+                    <p><code>boundary=administrative admin_level=10</code></p>
                     <p>Very small - Traditionally the amount of land one extended family could live off.</p>
+                    <p>Very old - Date back about 1,000 years</p>
                     <!-- stats about townland size -->
                 </section>
                 <!-- 2. Why they are important -->
@@ -67,8 +67,8 @@
                     <h1>Why?</h1>
                     <h2>Addresses</h2>
                     <p>Anyone geocoded Irish addresses? It's a mess.</p>
-                    <p>Houses in rural Ireland don't have house numbers, instead using (sometimes) "House Name, Townland, Nearby Town, County"</p>
-                    <p>Townlands are important for geocoding many addresses.</p>
+                    <p>Houses in rural Ireland don't have house numbers, postcodes, or street names. Instead using (sometimes) "House Name, Townland, Nearby Town, County"</p>
+                    <p>Townlands are important and helpful for geocoding many addresses.</p>
                     <p>Newly introduced postcode system (Eircode) might change that</p>
                 </section>
                 <section>
@@ -84,7 +84,7 @@
                     <h1>Why?</h1>
                     <h2>History and Heritage</h2>
                     <p>Part of Ireland's cultural heritage and should be preserved and spread.</p>
-                    <p>19th century census records are sorted by townlands.</p>
+                    <p>19th/early 20th century census records are sorted by townlands.</p>
                     <p>Helps people searching for Irish ancestry/geneology</p>
                 </section>
                 <!-- 3. History/Sources/Issues with existing boundary data in Ireland (cost, licence, accuracy) -->
@@ -95,6 +95,11 @@
                 </section>
 
                 <!-- A bit on how we mapped it -->
+                <section>
+                    <h1>So how do we do it?</h1>
+                    <p>Townlands not signed on the ground.</p>
+                    <p>Borders aren't marked clearly</p>
+                </section>
                 <section>
                     <h1>So how do we do it?</h1>
                     <p>Tracing!</p>
@@ -129,6 +134,7 @@
                     <p>Ordnance Survey Ireland have a copy<p>
                     <p class=fragment>Scanned in!</p>
                     <p class=fragment>Cropped and rectified!</p>
+                    <p class=fragment>On the web</p>
                 </section>
                 <section>
                     <h1>But</h1>
@@ -260,18 +266,6 @@
                 </section>
 
                 <section>
-                    <h1>What happens with available data</h1>
-                    <img src="images/wikipedia-source-change.png">
-                </section>
-                <section>
-                    <h1>What happens with available data</h1>
-                    <p>Someone corrected the Townlands Wikipedia article for "Largest Townland"</p>
-                    <p>Old reference was 1861 book. New Reference OpenStreetMap (via Townlands.ie)</p>
-                    <p>Turns out it's good to have data publically available</p>
-                    <p class=fragment>Who'd've thought it?</p>
-                </section>
-
-                <section>
                     <h1>Who's mapping?</h1>
                     <img src="images/user-contributions.svg">
                     <p>Lots of people, but core of hardcore mappers</p>
@@ -294,6 +288,21 @@
                     <img src="./images/taghistory-locality-townland.svg">
                     <p>Keep on mapping!</p>
                 </section>
+
+                <!--
+                <section>
+                    <h1>What happens with available data</h1>
+                    <img src="images/wikipedia-source-change.png">
+                </section>
+                <section>
+                    <h1>What happens with available data</h1>
+                    <p>Someone corrected the Townlands Wikipedia article for "Largest Townland"</p>
+                    <p>Old reference was 1861 book. New Reference OpenStreetMap (via Townlands.ie)</p>
+                    <p>Turns out it's good to have data publically available</p>
+                    <p class=fragment>Who'd've thought it?</p>
+                </section>
+                -->
+
 
 
                 <!-- Part 6 - Lets talk about community 2 mins -->
@@ -321,18 +330,26 @@
                     <h1>Lessons</h1>
                     <p>Seemed impossible in 2010</p>
                     <p>But we did it!</p>
-                    <p>Most mapping done by small number of people</p>
-                    <p>But you have to get out there and tell people, in order to <b>find</b> the long tail mappers</p>
+                    <p>Tools &amp; resources are important.</p>
                 </section>
                 <section>
                     <h1>Lessons</h1>
-                    <p>Tools &amp; resources are important.</p>
-                    <p>Setting a complex task is all good and well, but for success you need to come together and build on what you are best at</p>
+                    <p>Most mapping done by small number of people</p>
+                    <p>But they're not necessarily the people you think, or that you know about</p>
+                    <p>Setting a complex task is all well good, but for success you need to come together and build on what you are best at</p>
                     <p>Some are techies, some are teachers, some are motivators, all are important</p>
+                    <p>You have to get out there and tell people, in order to <b>find</b> the dedicated mappers</p>
                 </section>
 
                 <!-- 3. Libraries here (trinity & Bodelian) -->
-                <!-- 4. Same with Blueprint (brianh can give an approx number of scans they've done for us) -->
+                <section>
+                    <h1>Thanks</h1>
+                    <p><a href="https://www.tcd.ie/Library/map-library/">Glucksman Map Library, Trinity College Dublin</a> - provided the GSGS 3906 maps</p>
+                    <p><a href="https://www.bodleian.ox.ac.uk/">Bodleian Libraries, University of Oxford</a> who provided some missing GSGS 3906 maps</p>
+                    <p><a href="http://mapwarper.net/">Map Warper</a> - vital web based map rectifier (Sorry for filling your disk!)</p>
+                    <p><a href="http://www.blueprint.ie/">Blueprint Reprographics</a> - Dublin printing company that helped us scan in some of the large map sheets we have</p>
+                </section>
+
                 <section>
                     <h1>Thanks to Govs</h1>
                     <p>Thanks to the governments of Ireland and Northern Ireland</p>
