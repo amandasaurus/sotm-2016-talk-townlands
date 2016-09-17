@@ -148,7 +148,7 @@
                 <section>
                     <h1>Glucksman Map Library, Trinity College, Dublin</h1>
                     <p>Glucksman Map Library, in Trinity College, Dublin had a scan</p>
-                    <p>We will rectify and crop it, if we can scan it</p>
+                    <p>They will give us copies for OSM, if we'll scan and rectify for them</p>
                     <p>Success!</p>
                 </section>
                 <section>
@@ -157,14 +157,18 @@
                     <p>About ~675 images</p>
                     <p>Community starts cropping, rectifying and mapping.</p>
                 </section>
-                <section data-transition="none-out">
+                <section>
+                    <h1>Remember the 6 inch map?</h1>
+                    <p><img src="images/osi-6-inch.png"></p>
+                </section>
+                <section>
                     <h1>Quality 😕</h1>
-                    <p>Can you spot the townland borders?</p>
+                    <p>This is what we have to work with. Can you spot the townland borders?</p>
                     <img src="images/sample-townlands.png">
                 </section>
-                <section data-transition="none-in none">
+                <section>
                     <h1>Quality 😕</h1>
-                    <p>Can you spot the townland borders?</p>
+                    <p>This is what we have to work with. Can you spot the townland borders?</p>
                     <img src="images/sample-townlands-with-borders-highlighted.png">
                 </section>
                 <section>
@@ -192,7 +196,7 @@
                 </section>
 
                 <section>
-                    <h1>maps.openstreetmap.org - Slippy map</h1>
+                    <h1>maps.openstreetmap.ie - Slippy map</h1>
                     <p>We set up a replicating slippy map tile server which shows the mapped townlands (etc).</p>
                     <p>Allows people to see mapping progress as it's done.</p>
                     <p>Missing townland? Maybe incorrect relation</p>
@@ -202,15 +206,21 @@
                     <img src="images/townlands_ie-logo.png">
                     <h1>townlands.ie</h1>
                     <p>Rory set up <a href="www.townlands.ie">townlands.ie</a></p>
-                    <p>Django web app that imports OSM data and displays OSM data</p>
+                    <p>Django web app that imports OSM data and displays it formatted</p>
                     <p>Includes progress reports and rates of mapping, to spur people on.</p>
                 </section>
 
                 <section>
                     <h1>YouTube videos</h1>
                     <p>Dave made <a href="https://www.youtube.com/watch?v=KGkgolZV9is&list=PLwUy6ph8y4kFO8mmUgv87f16e4dxRh8NV">video tutorial on mapping townlands</a></p>
+                    <p>2½hrs of video</p>
                     <p>Covers all aspects of georectifying a sheet, using JOSM, mapping the townland, and other areas</p>
                     <p>Led to some new mappers coming out the woodwork and contributing</p>
+                </section>
+
+                <section>
+                    <h1>Townlands are building blocks</h1>
+                    <p>Townlands are administrative building blocks</p>
                 </section>
 
                 <section>
@@ -221,8 +231,9 @@
                 <section>
                     <h1>Civil Parishes</h1>
                     <p>Based on Church of Ireland (Anglican) parishes</p>
-                    <p>Not used much any more</p>
-                    <p>Very useful for geneology, since old census, birth certs etc are often "keyed" against CP</p>
+                    <p>Church of Ireland was disestablished in 1871</p>
+                    <p>Not used much any more for state purposes</p>
+                    <p>Very useful for geneology, since old census, birth certs include CP as a field</p>
                     <p><code>boundary=civil_parish</code></p>
                 </section>
                 <section>
@@ -249,11 +260,11 @@
                 </section>
 
                 <section>
-                    <h1>Data available</h1>
+                    <h1>What happens with available data</h1>
                     <img src="images/wikipedia-source-change.png">
                 </section>
                 <section>
-                    <h1>Data available</h1>
+                    <h1>What happens with available data</h1>
                     <p>Someone corrected the Townlands Wikipedia article for "Largest Townland"</p>
                     <p>Old reference was 1861 book. New Reference OpenStreetMap (via Townlands.ie)</p>
                     <p>Turns out it's good to have data publically available</p>
@@ -263,12 +274,12 @@
                 <section>
                     <h1>Who's mapping?</h1>
                     <img src="images/user-contributions.svg">
-                    <p>Long tail!</p>
+                    <p>Lots of people, but core of hardcore mappers</p>
                 </section>
 
                 <section>
                     <h1>Who's mapping?</h1>
-                    <img src="images/townlands-by-user.png">
+                    <img style="max-height: 600px" src="images/townlands-by-user.png">
                 </section>
 
                 <section>
@@ -277,6 +288,11 @@
                     <p>People started mapped their local area or area they had a connection to.</p>
                     <p>And then spread out</p>
                     <p>People care about areas, and wanted to improve that area</p>
+                </section>
+                <section>
+                    <h1>Rate of mapping</h1>
+                    <img src="./images/taghistory-locality-townland.svg">
+                    <p>Keep on mapping!</p>
                 </section>
 
 
@@ -331,7 +347,13 @@
                     <h1>The Future - What next?</h1>
                     <p>Can utilize government's open data (EDs)</p>
                     <p>Map more accurately - Dramatically improved county borders</p>
-                    <p>Can import </p>
+                    <p>Donate the rectified images back to the libraries</p>
+                    <p>Currently matching &amp; importing official Irish placename data (logainm) to get better <code>name:ga</code> coverage</p>
+                </section>
+
+                <section>
+                    <p>END</p>
+                    <p>(Oh dear god don't have to stare at those ancient maps anymore)</p>
                 </section>
 
 			</div>
@@ -350,7 +372,7 @@
 				history: true,
 				center: true,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				transition: 'none', // none/fade/slide/convex/concave/zoom
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
